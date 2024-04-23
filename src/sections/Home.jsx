@@ -1,0 +1,27 @@
+import { HiDownload } from "react-icons/hi";
+
+export const Home = () => {
+  return (
+    <section className="flex flex-col justify-center">
+      <h2 className="flex items-center gap-2 text-base sm:text-lg md:text-2xl lg:text-3xl font-semibold">
+        <div className="w-5 sm:w-8 md:w-10 lg:w-12  border rounded-full"></div>
+        RAFI FITROTULLOH
+      </h2>
+      <h1 className="transition-all text-4xl sm:text-5abxl md:text-6xl lg:text-7xl font-semibold">
+        <span className="text-primary">FRONTEND</span> <br /> AND{" "}
+        <span className="text-primary">BACKEND</span> <br />{" "}
+        <span className="text-primary">WEB</span> DEVELOPER
+      </h1>
+      <button
+        className="transition-all flex items-center gap-5 mt-10 border w-fit px-6 py-3 rounded-full hover:bg-wht/30 hover:backdrop-blur-sm"
+        type="button"
+      >
+        <HiDownload className="size-4 sm:size-5 md:size-6" />{" "}
+        <span className="tracking-[7px] font-medium text-sm sm:text-base md:text-lg">
+          Download CV
+        </span>
+      </button>
+      {/* <div className="absolute inset-x-0 bottom-0 h-32  bg-gradient-to-b from-transparent to-blk"></div> */}
+    </section>
+  );
+};

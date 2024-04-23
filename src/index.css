@@ -16,16 +16,16 @@
 }
 
 @layer components {
-  /* section {
-    @apply w-full mx-auto min-h-screen px-10 md:px-20 xs:px-0 relative;
-  } */
+  section {
+    @apply w-full mx-auto min-h-screen px-container py-10 relative z-10;
+  }
 
   .link-navbar {
     @apply transition-all text-gray-400 hover:text-wht hover:font-semibold;
   }
 
-  .mx-container {
-    @apply transition-all mx-5 md:mx-20;
+  .text-nav {
+    @apply text-sm;
   }
 
   .px-container {
