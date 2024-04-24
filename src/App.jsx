@@ -1,6 +1,7 @@
 import { NavBottom } from "./components/NavBottom";
 import { NavTop } from "./components/NavTop";
 import { About } from "./sections/About";
+import { Footer } from "./sections/Footer";
 import { Home } from "./sections/Home";
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
         {/* Sections */}
         <Home />
         <About />
+        <Footer />
       </main>
     </div>
   );
