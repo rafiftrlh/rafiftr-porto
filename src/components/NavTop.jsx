@@ -1,7 +1,7 @@
 export const NavTop = () => {
   return (
     <header
-      className="fixed top-5 w-full text-sm px-container
+      className="fixed top-5 left-1/2 -translate-x-1/2 max-w-4xl w-full px-10 text-sm
         "
       style={{ zIndex: 999 }}
     >

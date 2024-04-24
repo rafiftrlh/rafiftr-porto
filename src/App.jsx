@@ -13,12 +13,16 @@ export default function App() {
         </div>{" "}
       </div>
 
+      {/* Start Logo */}
+
       <NavTop />
       <NavBottom />
 
-      {/* Sections */}
-      <Home />
-      <About />
+      <main>
+        {/* Sections */}
+        <Home />
+        <About />
+      </main>
     </div>
   );
 }

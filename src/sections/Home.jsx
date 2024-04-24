@@ -2,12 +2,12 @@ import { HiDownload } from "react-icons/hi";
 
 export const Home = () => {
   return (
-    <section className="flex flex-col justify-center">
+    <section className="flex flex-col justify-center pt-32">
       <h2 className="flex items-center gap-2 text-base sm:text-lg md:text-2xl lg:text-3xl font-semibold">
         <div className="w-5 sm:w-8 md:w-10 lg:w-12  border rounded-full"></div>
         RAFI FITROTULLOH
       </h2>
-      <h1 className="transition-all text-4xl sm:text-5abxl md:text-6xl lg:text-7xl font-semibold">
+      <h1 className="transition-all text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold">
         <span className="text-primary">FRONTEND</span> <br /> AND{" "}
         <span className="text-primary">BACKEND</span> <br />{" "}
         <span className="text-primary">WEB</span> DEVELOPER

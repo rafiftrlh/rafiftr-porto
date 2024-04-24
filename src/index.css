@@ -10,15 +10,23 @@
   body {
     background: #000;
     background-size: 14px 24px;
-    background-image: linear-gradient(to right, #4f4f4f2e 1px, transparent 1px),
-      linear-gradient(to bottom, #8080800a 1px, transparent 1px);
+    background-image: linear-gradient(
+        to right,
+        #4f4f4f2e 1.5px,
+        transparent 1.5px
+      ),
+      linear-gradient(to bottom, #8080800a 1.5px, transparent 1.5px);
   }
 }
 
 @layer components {
   section {
-    @apply w-full mx-auto min-h-screen px-container py-10 relative z-10;
+    @apply max-w-4xl mx-auto px-10 py-20 relative z-10;
   }
+
+  /* main {
+    @apply relative;
+  } */
 
   .link-navbar {
     @apply transition-all text-gray-400 hover:text-wht hover:font-semibold;
@@ -30,5 +38,17 @@
 
   .px-container {
     @apply transition-all px-5 md:px-20;
+  }
+
+  .a-sosmed {
+    @apply flex items-center gap-5 font-medium text-base sm:text-lg;
+  }
+
+  .card {
+    @apply border md:col-span-2 border-wht p-5 rounded-lg bg-wht/15 backdrop-blur-md h-fit w-full;
+  }
+
+  .li-icon {
+    @apply w-10 h-10 transition-all hover:scale-110;
   }
 }
