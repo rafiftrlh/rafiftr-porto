@@ -1,0 +1,15 @@
+.containerLoaderHome {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  font-size: 2rem;
+}
+
+.loaderText {
+  font-weight: 600;
+  letter-spacing: 5px;
+}

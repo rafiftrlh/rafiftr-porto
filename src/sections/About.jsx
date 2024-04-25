@@ -82,71 +82,62 @@ export const About = () => {
             <ul className="mt-5 flex gap-5 flex-wrap justify-start">
               <li className="li-icon">
                 <a href="https://html.com/">
-                  <img src="/public/icons/icon-html.svg" alt="html" />
+                  <img src="icons/icon-html.svg" alt="html" />
                 </a>
               </li>
               <li className="li-icon">
                 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
-                  <img src="/public/icons/icon-css.svg" alt="css" />
+                  <img src="icons/icon-css.svg" alt="css" />
                 </a>
               </li>
               <li className="li-icon">
                 <a href="https://sass-lang.com/documentation/syntax/">
-                  <img src="/public/icons/icon-scss.svg" alt="scss" />
+                  <img src="icons/icon-scss.svg" alt="scss" />
                 </a>
               </li>
               <li className="li-icon">
                 <a href="https://tailwindcss.com/">
-                  <img
-                    src="/public/icons/icon-tailwindcss.svg"
-                    alt="tailwindcss"
-                  />
+                  <img src="icons/icon-tailwindcss.svg" alt="tailwindcss" />
                 </a>
               </li>
               <li className="li-icon">
                 <a href="https://developer.mozilla.org/en-US/docs/Web/javascript">
-                  <img
-                    src="/public/icons/icon-javascript.svg"
-                    alt="javascript"
-                  />
+                  <img src="icons/icon-javascript.svg" alt="javascript" />
                 </a>
               </li>
               <li className="li-icon">
                 <a href="https://react.dev/">
-                  <img src="/public/icons/icon-react.svg" alt="react js" />
+                  <img src="icons/icon-react.svg" alt="react js" />
                 </a>
               </li>
               <li className="li-icon">
                 <a href="https://nodejs.org">
-                  <img src="/public/icons/icon-nodejs.svg" alt="node js" />
+                  <img src="icons/icon-nodejs.svg" alt="node js" />
                 </a>
               </li>
               <li className="li-icon">
                 <a href="https://expressjs.com/">
-                  <img
-                    src="/public/icons/icon-expressjs.svg"
-                    alt="express js"
-                  />
+                  <img src="icons/icon-expressjs.svg" alt="express js" />
                 </a>
               </li>
               <li className="li-icon">
                 <a href="https://www.mysql.com/">
-                  <img src="/public/icons/icon-mysql.svg" alt="mysql" />
+                  <img src="icons/icon-mysql.svg" alt="mysql" />
                 </a>
               </li>
               <li className="li-icon">
                 <a href="https://www.mongodb.com/">
-                  <img src="/public/icons/icon-mongodb.svg" alt="mongodb" />
+                  <img src="icons/icon-mongodb.svg" alt="mongodb" />
                 </a>
               </li>
               <li className="li-icon">
                 <a href="https://www.figma.com">
-                  <img src="/public/icons/icon-figma.svg" alt="figma" />
+                  <img src="/icons/icon-figma.svg" alt="figma" />
                 </a>
               </li>
               <li className="li-icon">
                 <a href="https://git-scm.com/">
-                  <img src="/public/icons/icon-git.svg" alt="git" />
+                  <img src="icons/icon-git.svg" alt="git" />
                 </a>
               </li>
             </ul>
