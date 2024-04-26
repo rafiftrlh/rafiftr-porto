@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const NavTop = () => {
   return (
     <header
@@ -63,8 +65,8 @@ export const NavTop = () => {
         {/* Ene Nav */}
 
         {/* Start Button to Page Contact */}
-        <a
-          href=""
+        <Link
+          to="/contact"
           className="transition-all flex items-center gap-8 py-2 bg-blk border border-primary rounded-full pr-2 pl-4 group hover:bg-wht"
         >
           <div className="flex items-center gap-2">
@@ -78,13 +80,13 @@ export const NavTop = () => {
               <path d="M17 3.34a10 10 0 1 1-14.995 8.984L2 12l.005-.324A10 10 0 0 1 17 3.34M12 10a2 2 0 0 0-1.977 1.697l-.018.154L10 12l.005.15A2 2 0 1 0 12 10"></path>
             </svg>
             <span className="transition-all group-hover:text-blk text-nav">
-              Hire Me.
+              Get in touch.
             </span>
           </div>
           <div className="transition-all bg-wht text-blk font-semibold px-6 py-2 rounded-full group-hover:bg-blk group-hover:text-wht text-nav">
             Contact
           </div>
-        </a>
+        </Link>
         {/* End Button to Page Contact */}
       </div>
     </header>

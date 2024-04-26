@@ -70,7 +70,7 @@ export const About = () => {
                   <AiFillLinkedin className="text-2xl transition-all hover:fill-primary" />
                 </a>
               </li>
-              <li className="border-l-2 pl-2 text-base hover:text-primary transition-all">
+              <li className="border-l-2 pl-2 font-medium text-base hover:text-primary transition-all">
                 <a href="mailto:rafifitro89@email.com">rafifitro89@gmail.com</a>
               </li>
             </ul>
@@ -125,11 +125,11 @@ export const About = () => {
                   <img src="icons/icon-mysql.svg" alt="mysql" />
                 </a>
               </li>
-              <li className="li-icon">
+              {/* <li className="li-icon">
                 <a href="https://www.mongodb.com/">
                   <img src="icons/icon-mongodb.svg" alt="mongodb" />
                 </a>
-              </li>
+              </li> */}
               <li className="li-icon">
                 <a href="https://www.figma.com">
                   <img src="/icons/icon-figma.svg" alt="figma" />

@@ -4,7 +4,7 @@
 
 @layer base {
   * {
-    @apply text-white font-outfit;
+    @apply text-white font-outfit scroll-smooth;
   }
 
   body {
@@ -17,17 +17,13 @@
       ),
       linear-gradient(to bottom, #8080800a 1.5px, transparent 1.5px);
   }
-}
 
-@layer components {
   section {
     @apply max-w-4xl mx-auto px-10 py-20 relative z-10;
   }
+}
 
-  /* main {
-    @apply relative;
-  } */
-
+@layer components {
   .link-navbar {
     @apply transition-all text-gray-400 hover:text-wht hover:font-semibold;
   }
@@ -50,5 +46,13 @@
 
   .li-icon {
     @apply w-10 h-10 transition-all hover:scale-110;
+  }
+
+  .input-contact {
+    @apply py-4 rounded-full px-8 outline-none placeholder:text-wht/70 text-wht bg-neutral-700 backdrop-blur-3xl;
+  }
+
+  .textarea-contact {
+    @apply py-4 rounded-3xl px-8 outline-none placeholder:text-wht/70 text-wht bg-neutral-700 backdrop-blur-3xl;
   }
 }

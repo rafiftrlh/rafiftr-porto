@@ -13,11 +13,11 @@ export const Home = () => {
         <span className="text-primary">WEB</span> DEVELOPER
       </h1>
       <button
-        className="transition-all flex items-center gap-5 mt-10 border w-fit px-6 py-3 rounded-full hover:bg-wht/30 hover:backdrop-blur-sm"
+        className="transition-all flex items-center gap-5 mt-10 border w-fit px-6 py-3 rounded-full hover:bg-wht hover:border-wht group"
         type="button"
       >
-        <HiDownload className="size-4 sm:size-5 md:size-6" />{" "}
-        <span className="tracking-[7px] font-medium text-sm sm:text-base md:text-lg">
+        <HiDownload className="transition-all size-4 sm:size-5 md:size-6 group-hover:fill-blk" />{" "}
+        <span className="transition-all tracking-[7px] font-semibold text-sm sm:text-base md:text-lg group-hover:text-blk">
           Download CV
         </span>
       </button>

@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { NavBottom } from "./components/NavBottom";
 import { NavTop } from "./components/NavTop";
 import { LoaderHome } from "./components/loaderHome/LoaderHome";
@@ -6,6 +7,10 @@ import { Footer } from "./sections/Footer";
 import { Home } from "./sections/Home";
 
 export default function App() {
+  const home = useRef();
+  const about = useRef();
+  const footer = useRef();
+
   return (
     <div className="overflow-hidden">
       <LoaderHome />
@@ -20,14 +25,20 @@ export default function App() {
 
         {/* Start Logo */}
 
-        <NavTop />
-        <NavBottom />
+        <NavTop home={home} about={about} footer={footer} />
+        <NavBottom home={home} about={about} footer={footer} />
 
         <main>
           {/* Sections */}
-          <Home />
-          <About />
-          <Footer />
+          <div ref={home}>
+            <Home />
+          </div>
+          <div ref={about}>
+            <About />
+          </div>
+          <div ref={footer}>
+            <Footer />
+          </div>
         </main>
       </div>
     </div>
