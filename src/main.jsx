@@ -5,6 +5,8 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ContactPage } from "./pages/ContactPage.jsx";
 
+localStorage.setItem("isAlreadyEntered", false);
+
 const router = createBrowserRouter([
   {
     path: "/",

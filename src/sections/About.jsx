@@ -3,7 +3,7 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 export const About = () => {
   return (
-    <div className="relative">
+    <div id="aboutSect" className="relative">
       <div className="flex overflow-hidden space-x-10 w-screen border-y border-primary opacity-30 absolute top-1/2 rotate-6">
         <div className="flex whitespace-nowrap py-2 space-x-10 animate-loop-scrol">
           <span className="text-4xl text-primary font-bold">ABOUT ME </span>

@@ -1,10 +1,36 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export const NavTop = () => {
+  const [isHome, setIsHome] = useState(true);
+  const [isAbout, setIsAbout] = useState(false);
+  // const [isProject, setIsProject] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+
+      console.log(scrollTop);
+
+      const aboutSection = document.getElementById("aboutSect");
+      // const projectSection = document.getElementById("projectSect");
+
+      const aboutSectionTop = aboutSection.offsetTop;
+      // const projectSectionTop = projectSection.offsetTop;
+
+      setIsHome(scrollTop < aboutSectionTop);
+      setIsAbout(scrollTop >= aboutSectionTop);
+      // setIsProject(scrollTop >= projectSectionTop);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <header
-      className="fixed top-5 left-1/2 -translate-x-1/2 max-w-4xl w-full px-10 text-sm
-        "
+      className="fixed top-5 left-1/2 -translate-x-1/2 max-w-4xl w-full px-10 text-sm"
       style={{ zIndex: 999 }}
     >
       <div className="flex relative justify-end md:justify-between items-center">
@@ -12,7 +38,12 @@ export const NavTop = () => {
         <nav className="hidden md:inline-block bg-blk px-8 py-4 rounded-full border border-primary">
           <ul className="flex items-center gap-5 h-full font-medium">
             <li>
-              <a href="#" className="link-navbar text-nav">
+              <a
+                href="#homeSect"
+                className={`${
+                  isHome ? "link-navbar-active" : "link-navbar"
+                } text-nav`}
+              >
                 Home
               </a>
             </li>
@@ -34,7 +65,12 @@ export const NavTop = () => {
               </svg>
             </li>
             <li>
-              <a href="#" className="link-navbar text-nav">
+              <a
+                href="#aboutSect"
+                className={`${
+                  isAbout ? "link-navbar-active" : "link-navbar"
+                } text-nav`}
+              >
                 About
               </a>
             </li>
@@ -62,10 +98,14 @@ export const NavTop = () => {
             </li>
           </ul>
         </nav>
-        {/* Ene Nav */}
-
+        {/* End Nav */}
         {/* Start Button to Page Contact */}
         <Link
+          onClick={() =>
+            window.scrollTo({
+              top: 0,
+            })
+          }
           to="/contact"
           className="transition-all flex items-center gap-8 py-2 bg-blk border border-primary rounded-full pr-2 pl-4 group hover:bg-wht"
         >

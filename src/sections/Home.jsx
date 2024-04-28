@@ -2,7 +2,7 @@ import { HiDownload } from "react-icons/hi";
 
 export const Home = () => {
   return (
-    <section className="flex flex-col justify-center pt-32">
+    <section id="homeSect" className="flex flex-col justify-center pt-32">
       <h2 className="flex items-center gap-2 text-base sm:text-lg md:text-2xl lg:text-3xl font-semibold">
         <div className="w-5 sm:w-8 md:w-10 lg:w-12  border rounded-full"></div>
         RAFI FITROTULLOH

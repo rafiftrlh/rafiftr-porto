@@ -6,6 +6,11 @@ export const ContactPage = () => {
     <>
       <section>
         <Link
+          onClick={() =>
+            window.scrollTo({
+              top: 0,
+            })
+          }
           to="/"
           className="transition-all flex items-center gap-3 text-sm sm:text-base font-semibold hover:text-primary group w-fit"
         >

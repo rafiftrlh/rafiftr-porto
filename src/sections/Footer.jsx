@@ -30,12 +30,12 @@ export const Footer = () => {
         <div className="w-full flex flex-col justify-between items-end gap-y-5 ">
           <ul className="flex items-center gap-5 font-medium justify-end">
             <li>
-              <a href="#" className="link-navbar text-base">
+              <a href="#homeSect" className="link-navbar text-base">
                 Home
               </a>
             </li>
             <li>
-              <a href="#" className="link-navbar text-base">
+              <a href="#aboutSect" className="link-navbar text-base">
                 About
               </a>
             </li>

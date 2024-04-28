@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { NavBottom } from "./components/NavBottom";
 import { NavTop } from "./components/NavTop";
 import { LoaderHome } from "./components/loaderHome/LoaderHome";
@@ -7,14 +7,37 @@ import { Footer } from "./sections/Footer";
 import { Home } from "./sections/Home";
 
 export default function App() {
-  const home = useRef();
-  const about = useRef();
-  const footer = useRef();
+  const loaderSect = useRef();
+  let [isAlreadyEntered, setIsAlreadyEntered] = useState(
+    sessionStorage.getItem("isAlreadyEntered")
+  );
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const data = await localStorage.getItem("isAlreadyEntered");
+        setIsAlreadyEntered(data); // Mengatur state berdasarkan nilai dari sessionStorage
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+    setTimeout(() => {
+      localStorage.setItem("isAlreadyEntered", true);
+    }, 2000);
+  }, [loaderSect]);
 
   return (
     <div className="overflow-hidden">
-      <LoaderHome />
-
+      {isAlreadyEntered == "false" && (
+        <div ref={loaderSect}>
+          <LoaderHome />
+        </div>
+      )}
       <div className="">
         {/* White Circle */}
         <div className="absolute left-0 top-0 -z-10 h-full w-full">
@@ -24,21 +47,14 @@ export default function App() {
         </div>
 
         {/* Start Logo */}
-
-        <NavTop home={home} about={about} footer={footer} />
-        <NavBottom home={home} about={about} footer={footer} />
+        <NavTop />
+        <NavBottom />
 
         <main>
           {/* Sections */}
-          <div ref={home}>
-            <Home />
-          </div>
-          <div ref={about}>
-            <About />
-          </div>
-          <div ref={footer}>
-            <Footer />
-          </div>
+          <Home />
+          <About />
+          <Footer />
         </main>
       </div>
     </div>

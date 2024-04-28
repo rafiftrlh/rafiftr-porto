@@ -15,7 +15,8 @@
         #4f4f4f2e 1.5px,
         transparent 1.5px
       ),
-      linear-gradient(to bottom, #8080800a 1.5px, transparent 1.5px);
+      linear-gradient(to bottom, #4f4f4f2e 1.5px, transparent 1.5px);
+    /* #8080800a */
   }
 
   section {
