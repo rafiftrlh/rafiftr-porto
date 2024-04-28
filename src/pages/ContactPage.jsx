@@ -3,7 +3,38 @@ import { Footer } from "../sections/Footer";
 
 export const ContactPage = () => {
   return (
-    <>
+    <div className="overflow-hidden relative">
+      <div className="flex overflow-hidden space-x-10 w-screen border-y border-primary opacity-30 absolute top-[40%] rotate-6">
+        <div className="flex whitespace-nowrap py-2 space-x-10 animate-loop-scrol">
+          <span className="text-4xl text-primary font-bold">CONTACT ME</span>
+          <span className="text-4xl text-primary font-bold">CONTACT ME</span>
+          <span className="text-4xl text-primary font-bold">CONTACT ME</span>
+          <span className="text-4xl text-primary font-bold">CONTACT ME</span>
+          <span className="text-4xl text-primary font-bold">CONTACT ME</span>
+          <span className="text-4xl text-primary font-bold">CONTACT ME</span>
+          <span className="text-4xl text-primary font-bold">CONTACT ME</span>
+          <span className="text-4xl text-primary font-bold">CONTACT ME</span>
+          <span className="text-4xl text-primary font-bold">CONTACT ME</span>
+          <span className="text-4xl text-primary font-bold">CONTACT ME</span>
+          <span className="text-4xl text-primary font-bold">CONTACT ME</span>
+        </div>
+        <div
+          aria-hidden="true"
+          className="flex whitespace-nowrap py-2 space-x-10 animate-loop-scrol"
+        >
+          <span className="text-4xl text-primary font-bold">CONTACT ME</span>
+          <span className="text-4xl text-primary font-bold">CONTACT ME</span>
+          <span className="text-4xl text-primary font-bold">CONTACT ME</span>
+          <span className="text-4xl text-primary font-bold">CONTACT ME</span>
+          <span className="text-4xl text-primary font-bold">CONTACT ME</span>
+          <span className="text-4xl text-primary font-bold">CONTACT ME</span>
+          <span className="text-4xl text-primary font-bold">CONTACT ME</span>
+          <span className="text-4xl text-primary font-bold">CONTACT ME</span>
+          <span className="text-4xl text-primary font-bold">CONTACT ME</span>
+          <span className="text-4xl text-primary font-bold">CONTACT ME</span>
+          <span className="text-4xl text-primary font-bold">CONTACT ME</span>
+        </div>
+      </div>
       <section>
         <Link
           onClick={() =>
@@ -63,6 +94,6 @@ export const ContactPage = () => {
         </div>
       </section>
       <Footer />
-    </>
+    </div>
   );
 };
