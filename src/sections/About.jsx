@@ -125,11 +125,16 @@ export const About = () => {
                   <img src="icons/icon-mysql.svg" alt="mysql" />
                 </a>
               </li>
-              {/* <li className="li-icon">
-                <a href="https://www.mongodb.com/">
-                  <img src="icons/icon-mongodb.svg" alt="mongodb" />
+              <li className="li-icon">
+                <a href="https://www.prisma.io/">
+                  <img src="icons/icon-prisma.svg" alt="prisma" />
                 </a>
-              </li> */}
+              </li>
+              <li className="li-icon">
+                <a href="https://laravel.com/">
+                  <img src="icons/icon-laravel.svg" alt="laravel" />
+                </a>
+              </li>
               <li className="li-icon">
                 <a href="https://www.figma.com">
                   <img src="/icons/icon-figma.svg" alt="figma" />
