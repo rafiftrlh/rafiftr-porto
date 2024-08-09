@@ -20,7 +20,7 @@
   }
 
   section {
-    @apply max-w-4xl mx-auto px-10 py-20 relative z-10;
+    @apply relative z-10;
   }
 }
 
