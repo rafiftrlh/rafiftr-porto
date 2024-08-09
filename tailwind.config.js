@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       animation: {
-        "loop-scrol": "loop-scroll 50s linear infinite",
+        "loop-scrol": "loop-scroll 100s linear infinite",
       },
       keyframes: {
         "loop-scroll": {
@@ -23,6 +23,7 @@ export default {
       },
       fontFamily: {
         outfit: ["Outfit", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"]
       },
     },
   },

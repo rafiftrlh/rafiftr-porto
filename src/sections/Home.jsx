@@ -11,20 +11,20 @@ export const Home = () => {
         RAFI FITROTULLOH
       </h2>
       <div className='relative w-fit'>
-        <h1 className='transition-all text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold'>
+        <h1 className='transition-all text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold'>
           <span className='text-primary'>FRONTEND</span> <br /> AND{' '}
           <span className='text-primary'>BACKEND</span> <br />{' '}
           <span className='text-primary'>WEB</span> DEVELOPER
         </h1>
         <img
-          src='/icons/memphis-circle.svg'
+          src='icons/memphis-circle.svg'
           alt=''
-          className='absolute -z-10 bottom-0 -right-14 h-full'
+          className='absolute -z-10 bottom-0 -right-14 h-full animate-pulse'
         />
       </div>
       <div className='relative w-fit mt-10'>
         <img
-          src='/icons/memphis-arrow.svg'
+          src='icons/memphis-arrow.svg'
           alt=''
           className='absolute -z-10 -left-[150px] sm:-left-[170px] h-full'
         />
@@ -32,14 +32,14 @@ export const Home = () => {
           className='transition-all flex items-center gap-5 border w-fit px-6 py-3 rounded-full hover:bg-wht hover:border-wht group'
           type='button'
         >
-          <HiDownload className='transition-all size-4 sm:size-5 md:size-6 group-hover:fill-blk' />{' '}
-          <span className='transition-all tracking-[7px] font-semibold text-sm sm:text-base md:text-lg group-hover:text-blk'>
+          <HiDownload className='transition-all size-4 sm:size-5 group-hover:fill-blk' />{' '}
+          <span className='transition-all tracking-[7px] font-semibold text-xs sm:text-base group-hover:text-blk'>
             Download CV
           </span>
         </button>
       </div>
       <img
-        src='/icons/memphis-wave.svg'
+        src='icons/memphis-wave.svg'
         alt=''
         className='absolute -z-10 bottom-0 -right-10 h-[10%] md:h-[15%]'
       />

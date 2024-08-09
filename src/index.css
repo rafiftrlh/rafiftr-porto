@@ -8,15 +8,7 @@
   }
 
   body {
-    background: #000;
-    background-size: 14px 24px;
-    background-image: linear-gradient(
-        to right,
-        #4f4f4f2e 1.5px,
-        transparent 1.5px
-      ),
-      linear-gradient(to bottom, #4f4f4f2e 1.5px, transparent 1.5px);
-    /* #8080800a */
+    background: #0B0B0C;
   }
 
   section {
@@ -24,10 +16,18 @@
   }
 }
 
+.text-stroke {
+  -webkit-text-stroke: 1px #4CA92B;
+  -webkit-text-fill-color: transparent; 
+  color: transparent; 
+}
+
+
 @layer components {
   .link-navbar {
     @apply transition-all text-gray-400 hover:text-wht hover:font-semibold;
   }
+
 
   .text-nav {
     @apply text-sm;
