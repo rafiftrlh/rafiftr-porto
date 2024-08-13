@@ -134,7 +134,6 @@ export const ContactPage = () => {
             Please fill out this short form and I will contact you.
           </motion.p>
           <motion.form
-            onSubmit={}
             className='mt-5 flex flex-col gap-5'
             variants={containerVariants}
           >
