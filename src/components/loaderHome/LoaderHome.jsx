@@ -1,30 +1,20 @@
-import { motion } from "framer-motion";
-import "./loaderHome.css";
+import { motion } from 'framer-motion'
+import './loaderHome.css'
 
 export const LoaderHome = () => {
   return (
     <motion.div
-      initial={{ y: 0, opacity: 1 }}
-      animate={{
-        y: "-100%",
-        transition: {
-          duration: 1,
-          delay: 2,
-        },
-      }}
-      exit={{ y: window.innerWidth }}
-      className="bg-gradient-to-b from-blk from-90% via-primary to-transparent fixed w-full"
-      style={{ zIndex: 9999, height: "110vh" }}
+      className='bg-blk flex-shrink-0 h-screen w-screen relative'
     >
-      <div className="containerLoaderHome">
+      <div className='containerLoaderHome'>
         <motion.span
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
             transition: { delay: 0.5 },
-            transitionEnd: { display: "none" },
+            transitionEnd: { display: 'none' }
           }}
-          className="loaderText"
+          className='loaderText'
         >
           Halo
         </motion.span>
@@ -32,10 +22,10 @@ export const LoaderHome = () => {
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
-            transition: { delay: 0.8 },
-            transitionEnd: { display: "none" },
+            transition: { delay: 1 },
+            transitionEnd: { display: 'none' }
           }}
-          className="loaderText"
+          className='loaderText'
         >
           Hello
         </motion.span>
@@ -43,10 +33,10 @@ export const LoaderHome = () => {
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
-            transition: { delay: 1.1 },
-            transitionEnd: { display: "none" },
+            transition: { delay: 1.5 },
+            transitionEnd: { display: 'none' }
           }}
-          className="loaderText"
+          className='loaderText'
         >
           مرحباً بكم
         </motion.span>
@@ -54,10 +44,10 @@ export const LoaderHome = () => {
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
-            transition: { delay: 1.3 },
-            transitionEnd: { display: "none" },
+            transition: { delay: 2 },
+            transitionEnd: { display: 'none' }
           }}
-          className="loaderText"
+          className='loaderText'
         >
           Здравствуйте
         </motion.span>
@@ -65,10 +55,10 @@ export const LoaderHome = () => {
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
-            transition: { delay: 1.5 },
-            transitionEnd: { display: "none" },
+            transition: { delay: 2.5 },
+            transitionEnd: { display: 'none' }
           }}
-          className="loaderText"
+          className='loaderText'
         >
           こんにちは
         </motion.span>
@@ -76,13 +66,14 @@ export const LoaderHome = () => {
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
-            transition: { delay: 1.8 },
+            transition: { delay: 3 }
           }}
-          className="loaderText"
+          className='loaderText'
         >
           안녕하세요.
         </motion.span>
       </div>
+      <div className='h-10 absolute bottom-0 inset-x-0 bg-gradient-to-t from-wht/5 to-blk'></div>
     </motion.div>
-  );
-};
+  )
+}

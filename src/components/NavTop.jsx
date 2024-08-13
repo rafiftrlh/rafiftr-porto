@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 export const NavTop = () => {
   const [isHome, setIsHome] = useState(true)
@@ -26,7 +27,14 @@ export const NavTop = () => {
   }, [])
 
   return (
-    <header
+    <motion.header
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{
+        delay: 1,
+        duration: 1.5,
+        ease: 'easeOut'
+      }}
       className='fixed top-5 left-1/2 -translate-x-1/2 w-full px-12 md:px-[120px] text-sm'
       style={{ zIndex: 999 }}
     >
@@ -104,7 +112,7 @@ export const NavTop = () => {
             })
           }
           to='/contact'
-          className='transition-all flex items-center gap-8 py-2 bg-blk border border-primary rounded-full pr-2 pl-4 group hover:bg-wht'
+          className='transition-all flex items-center gap-5 py-2 bg-blk border border-primary rounded-full pr-2 pl-4 group hover:bg-wht'
         >
           <div className='flex items-center gap-2'>
             <svg
@@ -126,6 +134,6 @@ export const NavTop = () => {
         </Link>
         {/* End Button to Page Contact */}
       </div>
-    </header>
+    </motion.header>
   )
 }

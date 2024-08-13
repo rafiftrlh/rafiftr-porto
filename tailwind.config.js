@@ -17,7 +17,7 @@ export default {
         },
       },
       colors: {
-        blk: "#050505",
+        blk: "#0B0B0C",
         wht: "#f1f1f1",
         primary: "#4CA92B",
       },
